@@ -33,8 +33,9 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: iranzo/gh-pages-pelican-action@c27d99dd96c4137b3e6894aaf32bf89bb022214a
         uses: iranzo/gh-pages-pelican-action@1.0.3
-        with:
+        env:
           GITHUB_TOKEN: ${{ github.token }}
+        with:
           # override the default `gh-pages` deployment branch
           GH_PAGES_BRANCH: gh-pages
           # override the default `content` folder for sources for website
