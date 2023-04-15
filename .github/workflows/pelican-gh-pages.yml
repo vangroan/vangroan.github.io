@@ -42,8 +42,8 @@ jobs:
           SOURCE_FOLDER: content
           # override the default `pelicanconf.py` file for pelican configuration
           PELICAN_CONFIG_FILE: pelicanconf.py
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v1
 
   # Deployment job
   deploy:
